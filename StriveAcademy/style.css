@@ -1,0 +1,233 @@
+/* Styles for Strive Academy website */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #111;
+    color: white;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    padding: 15px 40px;
+}
+
+.logo {
+    color: red;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Landing section */
+.landing {
+    text-align: center;
+    padding: 100px 20px;
+    background: #222;
+}
+
+.landing h2 {
+    font-size: 40px;
+}
+
+.landing p {
+    font-size: 20px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* About section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Packages section */
+.packages {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #222;
+}
+
+.package {
+    background: #111;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: 200px;
+    border-radius: 8px;
+}
+
+.package button {
+    display: inline-block;
+    width: 50%;
+    margin-top: 20px;
+    padding: 12px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.package a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Pricing table */
+table {
+    margin-top: 100px;
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #222;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #444;
+}
+
+th {
+    background: #111;
+    color: red;
+    font-size: 2em;
+}
+
+td {
+    font-size: 1.5em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+}
+
+/* Contact Page */
+
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #444;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input, textarea {
+    display: block;
+    margin: 5px auto;
+    padding: 10px;
+    width: 250px;
+}
+
+button {
+    margin-top: 20px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button {
+    margin-top: 20px;
+}
+
+/* About Page */
+
+.about-page {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-body {
+    background: #222;
+}
+
+.about-page ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-page li {
+    background: #111;
+    margin: 10px auto;
+    padding: 10px;
+    width: 60%;
+    border-radius: 5px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 900px) {
+    nav {
+        display: inline;
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+
+    nav ul {
+        flex-direction: row;
+        margin-top: 50px;
+        margin-right: 10%;
+        justify-content: space-around;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .landing {
+        padding: 50px 20px;
+    }
+
+    .landing h2 {
+        font-size: 30px;
+    }
+
+    .landing p {
+        font-size: 18px;
+    }
+
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
